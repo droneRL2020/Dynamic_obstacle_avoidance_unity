@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
-using UnityEngine;
+using SocketIO;
 
 public class cubemovement : MonoBehaviour {
 
@@ -18,7 +20,10 @@ public class cubemovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+		if (Input.GetKeyDown ("a")) {
+			print ("hi");
+			SocketIOComponent.Instance.Connect();
+		}
 	}
 
 	void FixedUpdate () {

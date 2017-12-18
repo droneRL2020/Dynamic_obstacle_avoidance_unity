@@ -1,0 +1,239 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-unsafe
+-optimize
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.CoreModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.AccessibilityModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.ParticleSystemModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.PhysicsModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.VehiclesModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.ClothModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.AIModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.AnimationModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.TextRenderingModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.UIModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.TerrainPhysicsModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.IMGUIModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.UnityWebRequestModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.ClusterInputModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.ClusterRendererModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.UNETModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.DirectorModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.UnityAnalyticsModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.CrashReportingModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.PerformanceReportingModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.UnityConnectModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.WebModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.ARModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.VRModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.UIElementsModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.StyleSheetsModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.AudioModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.GameCenterModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.GridModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.ImageConversionModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.InputModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.JSONSerializeModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.ParticlesLegacyModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.Physics2DModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.ScreenCaptureModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.SpriteMaskModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.TerrainModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.TilemapModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.VideoModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/Managed/UnityEngine.WindModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Standalone/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Runtime/UnityEngine.Timeline.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Runtime/UnityEngine.SpatialTracking.dll"
+-r:C:/Users/User/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_2_OR_NEWER
+-define:UNITY_2017_2_0
+-define:UNITY_2017_2
+-define:UNITY_2017
+-define:PLATFORM_ARCH_64
+-define:UNITY_64
+-define:UNITY_ANALYTICS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_GENERICS
+-define:ENABLE_PVR_GI
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_GRID
+-define:ENABLE_TILEMAP
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_DIRECTOR
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_HUB
+-define:ENABLE_EDITOR_HUB_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_TIMELINE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_NATIVE_ARRAY
+-define:ENABLE_SPRITE_MASKING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:ENABLE_MONO_BDWGC
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_VIDEO
+-define:ENABLE_RMGUI
+-define:ENABLE_PACKMAN
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_STYLE_SHEETS
+-define:PLATFORM_STANDALONE_WIN
+-define:PLATFORM_STANDALONE
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VR
+-define:ENABLE_AR
+-define:ENABLE_SPATIALTRACKING
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:NET_2_0_SUBSET
+-define:CROSS_PLATFORM_INPUT
+Assets/cubemovement.cs
+Assets/Destroyer.cs
+Assets/Scripts/Spawner.cs
+Assets/Server_Script/CameraHelper.cs
+Assets/Server_Script/CommandServer.cs
+Assets/Server_Script/LightConditions.cs
+Assets/Server_Script/MenuOptions.cs
+Assets/Server_Script/MonoSingleton.cs
+Assets/Server_Script/SplashTimer.cs
+Assets/SocketIO/JSONObject/JSONObject.cs
+Assets/SocketIO/JSONObject/JSONTemplates.cs
+Assets/SocketIO/JSONObject/VectorTemplates.cs
+Assets/SocketIO/Scripts/SocketIO/Ack.cs
+Assets/SocketIO/Scripts/SocketIO/Decoder.cs
+Assets/SocketIO/Scripts/SocketIO/Encoder.cs
+Assets/SocketIO/Scripts/SocketIO/EnginePacketType.cs
+Assets/SocketIO/Scripts/SocketIO/Packet.cs
+Assets/SocketIO/Scripts/SocketIO/Parser.cs
+Assets/SocketIO/Scripts/SocketIO/SocketIOComponent.cs
+Assets/SocketIO/Scripts/SocketIO/SocketIOEvent.cs
+Assets/SocketIO/Scripts/SocketIO/SocketIOException.cs
+Assets/SocketIO/Scripts/SocketIO/SocketPacketType.cs
+Assets/SocketIO/Scripts/Test/TestSocketIO.cs
+Assets/SocketIO/WebsocketSharp/AssemblyInfo.cs
+Assets/SocketIO/WebsocketSharp/ByteOrder.cs
+Assets/SocketIO/WebsocketSharp/CloseEventArgs.cs
+Assets/SocketIO/WebsocketSharp/CloseStatusCode.cs
+Assets/SocketIO/WebsocketSharp/CompressionMethod.cs
+Assets/SocketIO/WebsocketSharp/ErrorEventArgs.cs
+Assets/SocketIO/WebsocketSharp/Ext.cs
+Assets/SocketIO/WebsocketSharp/Fin.cs
+Assets/SocketIO/WebsocketSharp/HandshakeBase.cs
+Assets/SocketIO/WebsocketSharp/HandshakeRequest.cs
+Assets/SocketIO/WebsocketSharp/HandshakeResponse.cs
+Assets/SocketIO/WebsocketSharp/LogData.cs
+Assets/SocketIO/WebsocketSharp/Logger.cs
+Assets/SocketIO/WebsocketSharp/LogLevel.cs
+Assets/SocketIO/WebsocketSharp/Mask.cs
+Assets/SocketIO/WebsocketSharp/MessageEventArgs.cs
+Assets/SocketIO/WebsocketSharp/Net/AuthenticationBase.cs
+Assets/SocketIO/WebsocketSharp/Net/AuthenticationChallenge.cs
+Assets/SocketIO/WebsocketSharp/Net/AuthenticationResponse.cs
+Assets/SocketIO/WebsocketSharp/Net/AuthenticationSchemes.cs
+Assets/SocketIO/WebsocketSharp/Net/Chunk.cs
+Assets/SocketIO/WebsocketSharp/Net/ChunkedRequestStream.cs
+Assets/SocketIO/WebsocketSharp/Net/ChunkStream.cs
+Assets/SocketIO/WebsocketSharp/Net/Cookie.cs
+Assets/SocketIO/WebsocketSharp/Net/CookieCollection.cs
+Assets/SocketIO/WebsocketSharp/Net/CookieException.cs
+Assets/SocketIO/WebsocketSharp/Net/EndPointListener.cs
+Assets/SocketIO/WebsocketSharp/Net/EndPointManager.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpBasicIdentity.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpConnection.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpDigestIdentity.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpHeaderInfo.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpHeaderType.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpListener.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpListenerContext.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpListenerException.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpListenerPrefixCollection.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpListenerRequest.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpListenerResponse.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpStatusCode.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpStreamAsyncResult.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpUtility.cs
+Assets/SocketIO/WebsocketSharp/Net/HttpVersion.cs
+Assets/SocketIO/WebsocketSharp/Net/InputChunkState.cs
+Assets/SocketIO/WebsocketSharp/Net/InputState.cs
+Assets/SocketIO/WebsocketSharp/Net/LineState.cs
+Assets/SocketIO/WebsocketSharp/Net/ListenerAsyncResult.cs
+Assets/SocketIO/WebsocketSharp/Net/ListenerPrefix.cs
+Assets/SocketIO/WebsocketSharp/Net/NetworkCredential.cs
+Assets/SocketIO/WebsocketSharp/Net/QueryStringCollection.cs
+Assets/SocketIO/WebsocketSharp/Net/ReadBufferState.cs
+Assets/SocketIO/WebsocketSharp/Net/RequestStream.cs
+Assets/SocketIO/WebsocketSharp/Net/ResponseStream.cs
+Assets/SocketIO/WebsocketSharp/Net/Security/SslStream.cs
+Assets/SocketIO/WebsocketSharp/Net/WebHeaderCollection.cs
+Assets/SocketIO/WebsocketSharp/Net/WebSockets/HttpListenerWebSocketContext.cs
+Assets/SocketIO/WebsocketSharp/Net/WebSockets/TcpListenerWebSocketContext.cs
+Assets/SocketIO/WebsocketSharp/Net/WebSockets/WebSocketContext.cs
+Assets/SocketIO/WebsocketSharp/Opcode.cs
+Assets/SocketIO/WebsocketSharp/PayloadData.cs
+Assets/SocketIO/WebsocketSharp/Rsv.cs
+Assets/SocketIO/WebsocketSharp/WebSocket.cs
+Assets/SocketIO/WebsocketSharp/WebSocketException.cs
+Assets/SocketIO/WebsocketSharp/WebSocketFrame.cs
+Assets/SocketIO/WebsocketSharp/WebSocketState.cs
+Assets/SocketIO/WebsocketSharp/WebSocketStream.cs
+Assets/UnityThreading/UnityMainThreadDispatcher.cs
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

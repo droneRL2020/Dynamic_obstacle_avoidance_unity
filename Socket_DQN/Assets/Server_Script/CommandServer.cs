@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections;
 using SocketIO;
-//using UnityStandardAssets.Vehicles.Car;
+using UnityStandardAssets.Vehicles.Car;
 using System;
 using System.Security.AccessControl;
 
@@ -23,18 +23,17 @@ public class CommandServer : MonoBehaviour
 
 	public cubemovement HostMovement;
 	public Camera FrontFacingCamera;
-	//public Camera RearFacingCamera;
+//	public Camera RearFacingCamera;
 	private cubemovement _hostMovement;
 
 	private String Front_camera_old;
-	//private String Rear_camera_old;
-
+//	private String Rear_camera_old;
+//
 	private String Front_cam_data;
-	//private String Rear_cam_data;
+//	private String Rear_cam_data;
 
 	// Use this for initialization
-
-	void Start()	
+	void Start()
 	{
 		SocketIOComponent.Instance.On("open", OnOpen);
 		SocketIOComponent.Instance.On("onsteer", steer);
@@ -49,8 +48,8 @@ public class CommandServer : MonoBehaviour
 	public void Init(){
 		
 		HostMovement = GameObject.FindWithTag ("Player").GetComponent<cubemovement> ();
-		FrontFacingCamera = GameObject.Find("recordCamera").GetComponent<Camera> ();
-		//RearFacingCamera = GameObject.Find("BackwardViewCam").GetComponent<Camera> ();
+		FrontFacingCamera = GameObject.FindWithTag("Camera").GetComponent<Camera> ();
+//		RearFacingCamera = GameObject.Find("BackwardViewCam").GetComponent<Camera> ();
 		_hostMovement = HostMovement.GetComponent<cubemovement>();
 
 
@@ -61,7 +60,7 @@ public class CommandServer : MonoBehaviour
 	{
 		if (FrontFacingCamera) {
 			Front_cam_data = Convert.ToBase64String (CameraHelper.CaptureFrame (FrontFacingCamera));
-			//Rear_cam_data = Convert.ToBase64String (CameraHelper.CaptureFrame (RearFacingCamera));
+//			Rear_cam_data = Convert.ToBase64String (CameraHelper.CaptureFrame (RearFacingCamera));
 		}
 	}
 
@@ -76,12 +75,11 @@ public class CommandServer : MonoBehaviour
 	{
 		//EmitTelemetry ();
 	}
-    // get action from DQN.py and emit to cubemovement.cs by using EmitTelemetry Class 
+//
 	void steer(SocketIOEvent obj)
 	{
 		JSONObject jsonObject = obj.data;
 		HostMovement.action = int.Parse (jsonObject.GetField ("action").str);
-		//HostMovement.num_connection = 0int.Parse (jsonObject.GetField ("num_connection").str);
 
 		EmitTelemetry();
 	}
@@ -96,51 +94,46 @@ public class CommandServer : MonoBehaviour
 			//	_socket.Emit("telemetry", new JSONObject());
 			//}
 			//else {
-				// Collect Data from drone
+				// Collect Data from the Car
 				Dictionary<string, string> data = new Dictionary<string, string>();
-				data ["Movement"] = _hostMovement.movement.ToString ("N4");
-				
 				//List<float> data_Lidar = new List<float>();
-				//data["Speed"] = _hostMovement.m_Speed.ToString ("N4");
+				
+				data ["test"] = 0.123.ToString ("N4");
+//				data["Speed"] = _hostMovement.m_Speed.ToString ("N4");
 				data["Action_vehicle"] = _hostMovement.action.ToString("N4");
-				//data["reward"] = _hostMovement.reward.ToString("N4");
-				//data["Front_ADAS"] = _hostMovement.Front_ADAS.ToString("N4");
-				//data["Left_ADAS"] = _hostMovement.Left_ADAS.ToString("N4");
-				//data["Right_ADAS"] = _hostMovement.Right_ADAS.ToString("N4");
-				//data["Left_Changing"] = _hostMovement.Left_Changing.ToString("N4");
-				//data["Right_Changing"] = _hostMovement.Right_Changing.ToString("N4");
-				//data["Vehicle_X"] = _hostMovement.Vehicle_x.ToString("N4");
-				//data["Vehicle_Z"] = _hostMovement.Vehicle_z.ToString ("N4");
+//				//data["reward"] = _hostMovement.reward.ToString("N4");
+//				data["Front_ADAS"] = _hostMovement.Front_ADAS.ToString("N4");
+//				data["Left_ADAS"] = _hostMovement.Left_ADAS.ToString("N4");
+//				data["Right_ADAS"] = _hostMovement.Right_ADAS.ToString("N4");
+				data["Left_Changing"] = _hostMovement.Left_Changing.ToString("N4");
+				data["Right_Changing"] = _hostMovement.Right_Changing.ToString("N4");
+//				data["Vehicle_X"] = _hostMovement.Vehicle_x.ToString("N4");
+//				data["Vehicle_Z"] = _hostMovement.Vehicle_z.ToString ("N4");
 
 				//data["terminal"] = _hostMovement.terminal.ToString("N4");
-				/*
-				if (HostMovement.Range_list.Count < 360) {
-					for (int i = 0; i < 360; i++){
-						data[i.ToString("D")] = 0.ToString("N4");
-					}
-				} else {
-					for (int i = 0; i < 360; i++){
-						data[i.ToString("D")] = HostMovement.Range_list[i].ToString("N4");
-					}
-				}
-				*/
 
+//				if (HostMovement.Range_list.Count < 360) {
+//					for (int i = 0; i < 360; i++){
+//						data[i.ToString("D")] = 0.ToString("N4");
+//					}
+//				} else {
+//					for (int i = 0; i < 360; i++){
+//						data[i.ToString("D")] = HostMovement.Range_list[i].ToString("N4");
+//					}
+//				}
 				if (FrontFacingCamera != null) {
-			
+
 					//data["front_image"] = Convert.ToBase64String(CameraHelper.CaptureFrame(FrontFacingCamera));
-					//data["rear_image"] = Convert.ToBase64String(CameraHelper.CaptureFrame(RearFacingCamera));
 					data["front_image"] = Front_cam_data;
-					//data ["rear_image"] = Rear_cam_data;
-
+					
 					//Front_camera_old = Convert.ToBase64String(CameraHelper.CaptureFrame(FrontFacingCamera));
-					//Rear_camera_old = Convert.ToBase64String(CameraHelper.CaptureFrame(RearFacingCamera));
 					Front_camera_old = Front_cam_data;
-					//Rear_camera_old = Rear_cam_data;
-
+					
 				} else {
 					data["front_image"] = Front_camera_old;
-					//data["rear_image"]  = Rear_camera_old;
 				}
+				
+
 
 				//data_Lidar = HostMovement.Range_list.ToString("N4");
 				SocketIOComponent.Instance.Emit("telemetry", new JSONObject(data));

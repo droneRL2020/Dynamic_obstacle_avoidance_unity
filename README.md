@@ -3,7 +3,7 @@
 There are 2 goals for this project.
 1. Drone avoids moving yellow ball by learning its velocity through DRL.
 * Deep reinforcement learning was done using ppo with 7 coordinates(yellow ball's position, velocity and drone's position) input.
-* Deep reinforcement learning was done using dqn with drone's 1st view only as input.
+* Deep reinforcement learning was done using dqn with drone's 1st view image pixel(80*80*1) only as input.
 2. Leverage simulation to the real world by using both domain randomization and domain adaptation.
 
 Currently, I have gone through the first part and results are as below.

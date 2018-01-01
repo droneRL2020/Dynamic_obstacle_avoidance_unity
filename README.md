@@ -20,4 +20,4 @@ The average reward increases!
 ## [Observation as state input, training at no wind environment, trained with 0.999 gamma value]
 <img src = "https://user-images.githubusercontent.com/34183439/34464402-9fc4f3a0-eec0-11e7-920a-9ca67c0ea33b.gif" width="600" height="400">
 The average reward increases!
-<img scr = "https://user-images.githubusercontent.com/34183439/34465137-95c471fa-eee3-11e7-9b57-a9508ff5e508.PNG">
+<img src = "https://user-images.githubusercontent.com/34183439/34465215-ecd67e6c-eee7-11e7-8019-1ef09e2dbc47.PNG">

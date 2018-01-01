@@ -6,7 +6,7 @@ There are 2 goals for this project.
 * Deep reinforcement learning was done using dqn with drone's 1st view image pixel only as input.
 2. Leverage simulation to the real world by using both domain randomization and domain adaptation.
 
-Currently, We have gone through the first part and results are as below.
+Currently, we have gone through the first part and results are as below.
 
 ## Result
 

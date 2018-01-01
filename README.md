@@ -20,12 +20,12 @@ Currently, I have gone through the first part and results are as below.
 * I concluded the reason why performance was tied with experiment 1-1-1. was because gamma value was 0.99. Ball reaches to drone after 60 frames. Since, gamma value is 0.99 drone's q-function is more affected by balls after 30 frames. Thus, drone can still avoid windy ball, even though it changes velocity after 30 frames.
 <img src = "https://user-images.githubusercontent.com/34183439/34464401-9ed128e2-eec0-11e7-8740-b77cf687cc3c.gif" width="600" height="400">
 
-The average reward increases!
+2. The average reward increases!
 <img src = "https://user-images.githubusercontent.com/34183439/34465199-bcc2d8a2-eee6-11e7-976d-86430b1d90c9.PNG">
 
 
 ### [Experiment 1-2. Observation as state input, training at no wind environment, trained with 0.999 gamma value]
 1. Performance : Avoided around 7/10 times. (I need to use cloud. Very slow training)
 <img src = "https://user-images.githubusercontent.com/34183439/34464402-9fc4f3a0-eec0-11e7-920a-9ca67c0ea33b.gif" width="600" height="400">
-The average reward increases!
+2. The average reward increases!
 <img src = "https://user-images.githubusercontent.com/34183439/34465215-ecd67e6c-eee7-11e7-8019-1ef09e2dbc47.PNG">
